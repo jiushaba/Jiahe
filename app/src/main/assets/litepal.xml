@@ -1,6 +1,6 @@
 <litepal>
     <dbname value="cool_weather" />    <!--数据库名-->
-    <version value="1 "/>               <!--数据库版本为：1-->
+    <version value="1"/>               <!--数据库版本为：1-->
     <!--将三个实体类添加到映射列表-->
     <list>
         <mapping class="com.zdlog.jiahe.db.City"/>

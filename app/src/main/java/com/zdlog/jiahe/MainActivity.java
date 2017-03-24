@@ -1,10 +1,13 @@
 package com.zdlog.jiahe;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+
+import com.tencent.android.tpush.XGPushManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,5 +21,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+        Context context = getApplicationContext();
+        XGPushManager.registerPush(context);
     }
 }
